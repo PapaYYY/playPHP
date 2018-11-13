@@ -2,15 +2,12 @@
 
 #<?php
 
-echo "hello";
-
+include "src/Dates/BirthDates.php";
 $birthDate = "1984-05-29";
-$todayDate = date("Y-m-d");
+$days = new \Mamay\Dates\BirthDates($birthDate);
 
-$birthTime = strtotime($birthDate);
-$todayTime = strtotime($todayDate);
+$totalDays = $days->calc();
 
-$totalSecs = $todayTime - $birthTime;
-$totalDays = floor($totalSecs/3600/24);
+
 
 echo "$birthDate : $totalDays\n";
