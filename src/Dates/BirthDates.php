@@ -6,7 +6,7 @@
  * Time: 12:53
  */
 
-namespace Mamay\Dates;
+namespace mamay\Dates;
 
 
 class BirthDates

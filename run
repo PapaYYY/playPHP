@@ -2,9 +2,9 @@
 
 #<?php
 
-include "src/Dates/BirthDates.php";
+require_once "vendor/autoload.php";
 $birthDate = "1984-05-29";
-$days = new \Mamay\Dates\BirthDates($birthDate);
+$days = new \mamay\Dates\BirthDates($birthDate);
 
 $totalDays = $days->calc();
 
